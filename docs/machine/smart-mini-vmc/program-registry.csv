@@ -1,0 +1,5 @@
+program_id,module,purpose,status,owner,last_validated_task,last_validated_date
+O9000,common,Shared safety utility entry point,reserved,codex,,
+O9020,probe-calibration,GP-800 probe calibration bootstrap stub,planned,codex,task-2026-02-16-fanuc-oi-mf-plus-macro-workflow-bootstrap,2026-02-16
+O9050,toolsetter-calibration,WP-600 tool setter calibration bootstrap stub,planned,codex,task-2026-02-16-fanuc-oi-mf-plus-macro-workflow-bootstrap,2026-02-16
+O9080,reserved,Reserved for future expansion,reserved,codex,,

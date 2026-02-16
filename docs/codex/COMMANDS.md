@@ -1,12 +1,12 @@
 # Canonical Commands
 
-This file is the single source of truth for setup/build/test/lint/format commands.  
-If the toolchain changes, update this file first.
+This file is the single source of truth for local setup/build/test/lint/format verification.
+If the workflow changes, update this file first.
 
 | Purpose | Command | When to run | Expected signal |
 | --- | --- | --- | --- |
-| Setup environment | `TODO: add setup command` | On first clone or when dependencies change | Setup finishes without errors |
-| Build | `TODO: add build command` | Before PR for buildable changes | Build exits with status 0 |
-| Test | `TODO: add test command` | Before marking task complete | Tests pass with status 0 |
-| Lint | `TODO: add lint command` | Before PR | No lint violations |
-| Format check | `TODO: add format check command` | Before PR | Formatting check passes |
+| Setup environment | `bash scripts/verify/check-structure.sh` | On first clone and before PR | Required directories/docs/scripts exist and command catalog has no TODO placeholders |
+| Build | `bash scripts/verify/check-program-policy.sh` | After editing `.nc` macro files and before PR | Macro header and O90xx policy pass, unsupported M-codes are absent |
+| Test | `bash scripts/verify/check-registry-sync.sh` | Before marking task complete | Program registry and macro file IDs are synchronized |
+| Lint | `bash scripts/verify/check-task-evidence.sh` | Before PR | Macro source changes include task doc references for operator notes and safety checklists |
+| Format check | `git diff --check` | Before PR | No whitespace formatting violations in working tree |
