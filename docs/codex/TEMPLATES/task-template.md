@@ -30,6 +30,22 @@ updated: YYYY-MM-DD
 
 - <change made>
 
+## Operator Notes
+
+- <operator observations, or "N/A - docs-only change">
+
+## Dry-Run Checklist
+
+- Reference: `docs/machine/smart-mini-vmc/SAFETY-RUNBOOK.md`
+- [ ] Dry-run completed
+- [ ] Stop/recovery flow validated
+
+## Supervised Run Checklist
+
+- Reference: `docs/machine/smart-mini-vmc/SAFETY-RUNBOOK.md`
+- [ ] First supervised run completed
+- [ ] Result and offsets reviewed
+
 ## Verification Evidence
 
 | Command | Result |
